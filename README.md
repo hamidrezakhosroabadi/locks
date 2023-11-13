@@ -14,11 +14,11 @@ lock_key = 'my_lock'
 retry_options = {'tries': 3, 'delay': 1}
 
 with Lock(driver, lock_key, **retry_options):
-# Perform operations while holding the lock
+  # Perform operations while holding the lock
 ```
 # Supported Drivers
 
-ZooKeeper Driver
-Redis Driver
-Redis Cluster Driver
-ETCD Driver
+1. ZooKeeper Driver
+2. Redis Driver
+3. Redis Cluster Driver
+4. ETCD Driver
